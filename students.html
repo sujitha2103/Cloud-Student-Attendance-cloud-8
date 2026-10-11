@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Students</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<div class="main-container">
+<aside class="sidebar"><div class="logo">☁️ Cloud Attendance</div>
+<a href="dashboard.html" class="nav-link">🏠 Dashboard</a>
+<a href="students.html" class="nav-link active">👨‍🎓 Students</a>
+<a href="attendance.html" class="nav-link">✅ Attendance</a>
+<a href="reports.html" class="nav-link">📊 Reports</a>
+<a href="index.html" class="nav-link logout">🚪 Logout</a></aside>
+<main class="main-content">
+<div class="topbar"><div><h1>Student Management</h1><p>Add and manage students</p></div></div>
+<div class="form-card"><h2>Add Student</h2><br>
+<form id="studentForm"><div class="form-grid">
+<div class="form-group"><label>Student ID</label><input type="text" id="studentId" placeholder="STU001" required></div>
+<div class="form-group"><label>Student Name</label><input type="text" id="studentName" placeholder="Enter student name" required></div>
+<div class="form-group"><label>Department</label><select id="department"><option>CSE</option><option>IT</option><option>ECE</option><option>EEE</option><option>MECH</option></select></div>
+<div class="form-group"><label>Year</label><select id="year"><option>1st Year</option><option>2nd Year</option><option>3rd Year</option><option>4th Year</option></select></div>
+</div><button class="primary-btn" type="submit">Add Student</button></form></div>
+<div class="table-container"><h2>Student List</h2><br><input type="text" id="search" class="search-box" placeholder="Search student...">
+<table><thead><tr><th>Student ID</th><th>Name</th><th>Department</th><th>Year</th><th>Action</th></tr></thead><tbody id="studentTable"></tbody></table></div>
+</main></div>
+<script src="js/students.js"></script></body></html>

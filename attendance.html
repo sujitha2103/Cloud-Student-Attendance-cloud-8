@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attendance</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<div class="main-container">
+<aside class="sidebar"><div class="logo">☁️ Cloud Attendance</div>
+<a href="dashboard.html" class="nav-link">🏠 Dashboard</a>
+<a href="students.html" class="nav-link">👨‍🎓 Students</a>
+<a href="attendance.html" class="nav-link active">✅ Attendance</a>
+<a href="reports.html" class="nav-link">📊 Reports</a>
+<a href="index.html" class="nav-link logout">🚪 Logout</a></aside>
+<main class="main-content">
+<div class="topbar"><div><h1>Mark Attendance</h1><p>Mark student attendance</p></div></div>
+<div class="form-card"><label>Select Date</label><input type="date" id="attendanceDate"></div>
+<div class="table-container"><h2>Student Attendance</h2><br>
+<table><thead><tr><th>ID</th><th>Name</th><th>Department</th><th>Status</th><th>Action</th></tr></thead><tbody id="attendanceTable"></tbody></table></div>
+</main></div>
+<script src="js/attendance.js"></script></body></html>
